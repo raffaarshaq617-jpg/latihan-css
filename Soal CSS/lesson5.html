@@ -2,93 +2,188 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2><font face ="tohama" size ="30px">THIS IS TOHAMA FONT</font></h2>
+    <title>Lesson 5</title>
 
-    <br><hr>
-
-    <h2><font face ="arial" size ="30px">Biggest Deals of the Year!</font></h2>
-    <h3><font face ="arial" color ="red">Sales end Tuesday</font></h3>
-
-    <br><hr>
-
-    <h2><font face ="verdana" size ="30px">HTML CSS Course</font></h2>
-    <h3><font face ="verdana" color ="grey">Beginner to Pro</font></h3>
-    <h3><font face ="arial">In this course, we'll learn the skils you need to become  a developer</font></h3>
-    <button id="button 2">Get started</button>
-
-    <br><hr>
-    <center>
-    <h2><font face ="arial" size ="30px">Shopping for your business?</font></h2>
-    <h3><font face ="arial">See how Apple at Work can help</font></h3>
-    <h3><font face ="arial" color ="blue">Learn more ></font></h3>
-    </center>
-    
-
-    <br><hr>
-    <center>
-    <h3><font color="red" face="arial">New</font></h3>
-    <h3><font face="arial">MacBook Pro</font></h3>
-    <h1><font face="arial" size="20px">Supercharged for pros.</font></h1>
-    <h3><font face="arial">From $1999</font></h3>
-    <button id="button 3">Buy</button>
-    </center>
-
-    <center>
-    <br><hr>
-
-    <span class="hmm">1,049</span>
-    <span class="hah">USD</span>
-
-    <br><hr>
-</center>
-    
- <div>
     <style>
-        .hmm {
-            font-size: 40px;
-            color: black;
-            font-family: arial;
-           
+        body {
+            font-family: Arial, sans-serif;
         }
 
-    .hah {
-        font-size: 20px;
-        color: grey;
-        font-family: arial;
-        font-weight: initial;
+        hr {
+            margin: 20px 0;
         }
 
+        .tahoma {
+            font-family: Tahoma;
+            font-size: 30px;
+        }
+
+        .big-deals {
+            font-size: 30px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .grey {
+            color: grey;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .verdana {
+            font-family: Verdana;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .btn-green {
+            background-color: green;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-blue {
+            background-color: rgb(0, 145, 255);
+            padding: 15px;
+            border: none;
+            border-radius: 30px;
+            width: 200px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .usd {
+            font-size: 12px;
+            color: grey;
+        }
+
+        .after-hours {
+            font-size: 14px;
+            color: grey;
+        }
+
+        .down {
+            font-size: 14px;
+            color: red;
+        }
+
+        /* ===== TWEET STYLE ===== */
+        .tweet-container {
+            width: 700px;
+            background-color: #e6e6e6;
+            padding: 15px 20px;
+            border: 1px solid #ccc;
+        }
+
+        .tweet-header {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .tweet-header span {
+            color: #f36868;
+            font-weight: normal;
+        }
+
+        .tweet-content {
+            margin-top: 10px;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        .mention {
+            color: #1da1f2;
+            text-decoration: none;
+            font-weight: bold;
+        }
     </style>
-<style>
-    #button\ 2 {
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-       border-radius: 10px;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-    }
+</head>
 
-    #button\ 3 {
-        background-color: rgb(15, 113, 166);
-        border: none;
-        color: white;
-        padding: 10px 30px;
-       border-radius: 25px;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-    }
-</style>
-</div>
+<body>
+
+    <!-- Tahoma -->
+    <h2 class="tahoma">THIS IS TAHOMA FONT</h2>
+
+    <hr>
+
+    <!-- Deals -->
+    <h2 class="big-deals">Biggest Deals of the Year!</h2>
+    <h3 class="red">Sales end Tuesday</h3>
+
+    <hr>
+
+    <!-- Course -->
+    <h2 class="verdana big-deals">HTML CSS Course</h2>
+    <h3 class="verdana grey">Beginner to Pro</h3>
+    <p>
+        In this course, we'll learn the skills you need to become a developer
+    </p>
+    <button class="btn-green">Get Started</button>
+
+    <hr>
+
+    <!-- Apple Business -->
+    <div class="center">
+        <h2>Shopping for your business</h2>
+        <h3>See how Apple at Work can help</h3>
+        <h3 style="color: blue;">Learn now &gt;</h3>
+    </div>
+
+    <hr>
+
+    <!-- MacBook -->
+    <div class="center">
+        <h3 class="red">New</h3>
+        <h3>MacBook Pro</h3>
+        <h2>Super Charger for Pros</h2>
+        <h3 class="grey">From $1999</h3>
+        <a href="https://www.apple.com">
+            <button class="btn-blue">Buy</button>
+        </a>
+    </div>
+
+    <hr>
+
+    <!-- Stock Price -->
+    <div>
+        <span class="price">1,046.00</span>
+        <span class="usd">USD</span>
+
+        <p class="green">+18.05 (1.75%) today</p>
+
+        <span class="after-hours">After hours 1,046.00</span>
+        <span class="down">-1.61 (0.15%)</span>
+    </div>
+
+    <hr>
+
+    <!-- FREECODECAMP TWEET -->
+    <div class="tweet-container">
+        <div class="tweet-header">
+            freeCodeCamp.org 
+            <span>@freeCodeCamp · 1h</span>
+        </div>
+
+        <div class="tweet-content">
+            As a web developer, you'll want to make your projects easy to use and navigate around.
+            <br><br>
+            Here <a href="#" class="mention">@chp_it</a> outlines the top skills new developers should have.
+        </div>
+    </div>
 
 </body>
 </html>
