@@ -1,160 +1,313 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>UKMPPG</title>
-
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #eee;
-}
-
-.container {
-    width: 800px;
-    margin: auto;
-    background: white;
-    border: 1px solid #999;
-}
-
-.header {
-    padding: 10px;
-    border-bottom: 1px solid #999;
-}
-
-.header img {
-    width: 60px;
-    vertical-align: middle;
-}
-
-.header span {
-    font-weight: bold;
-    margin-left: 10px;
-}
-
-.main {
-    display: flex;
-}
-
-/* Sidebar */
-.sidebar {
-    width: 200px;
-    padding: 10px;
-}
-
-.menu-item {
-    background: #bbb;
-    padding: 8px;
-    margin-bottom: 5px;
-}
-
-.menu-item:hover {
-    background: yellow;
-    cursor: pointer;
-}
-
-/* Content */
-.content {
-    flex: 1;
-    padding: 10px;
-}
-
-.content h3 {
-    text-align: center;
-}
-
-.top-right {
-    text-align: right;
-    font-size: 12px;
-    color: red;
-}
-
-.link-box {
-    background: teal;
-    color: white;
-    padding: 3px 6px;
-    display: inline-block;
-    margin: 2px;
-    font-size: 12px;
-}
-
-/* Footer */
-.footer {
-    background: #3f4f63;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-</style>
-
+    <title>Lesson 10 - Nested Layout</title>
 </head>
 
-<body>
+<body style="font-family:Arial; padding:20px; background:#f5f5f5;">
 
-<div class="container">
+<h2>Lesson 10 - Nested Layout</h2>
 
-    <!-- HEADER -->
-    <div class="header">
-        <img src="Pak yayat.png" alt="logo">
-        <span>Kementerian Riset, Teknologi, Dan Pendidikan Tinggi Republik Indonesia</span>
+<!-- 10a -->
+<h3>10a. Draw the layout for this design</h3>
+<div style="width:400px; background:white; padding:10px; border-radius:6px;">
+
+    <div style="display:inline-block; width:50px; height:50px;
+                background-image:url('../../../../jaehyun.jpeg');
+                background-size:cover; background-position:center;
+                border-radius:50%; vertical-align:middle;">
     </div>
 
-    <div class="main">
+    <div style="display:inline-block; vertical-align:middle; margin-left:10px; width:200px;">
+        <div style="font-weight:bold;">jae its me</div>
+        <div style="color:gray; font-size:14px;">Idol/Actor</div>
+        <div style="color:gray; font-size:12px;">SM ENTERTAINMENT</div>
+    </div>
 
-        <!-- SIDEBAR -->
-        <div class="sidebar">
-            <div class="menu-item">Beranda</div>
-            <div class="menu-item">Cetak Formulir</div>
-            <div class="menu-item">Cek Lokasi Ujian</div>
-            <div class="menu-item">Masuk</div>
-            <div class="menu-item">Kontak</div>
+    <button style="float:right; margin-top:10px;
+                   background:#3b82f6; color:white;
+                   border:none; padding:6px 12px;
+                   border-radius:4px;">
+        Follow
+    </button>
+
+</div>
+
+<hr>
+
+<!-- 10b -->
+<h3>10b. Draw the layout</h3>
+
+<div style="width:420px; background:white; padding:10px; border-radius:6px;">
+
+    <div style="display:inline-block; width:50px; height:50px;
+                background-image:url('../../../../jaehyun.jpeg');
+                background-size:cover; background-position:center;
+                border-radius:50%; vertical-align:middle;">
+    </div>
+
+    <div style="display:inline-block; vertical-align:middle; margin-left:10px; width:200px;">
+        <div style="font-weight:bold;">jae its me</div>
+        <div style="color:gray; font-size:14px;">Idol/Actor</div>
+        <div style="color:gray; font-size:12px;">SM ENTERTAINMENT</div>
+    </div>
+
+    <button style="float:right; margin-top:10px;
+                   background:#3b82f6; color:white;
+                   border:none; padding:6px 12px;
+                   border-radius:4px;">
+        Follow
+    </button>
+
+</div>
+<div style="width:420px; background:white; padding:10px; border-radius:6px;">
+
+    <!-- profile -->
+    <div style="margin-bottom:10px;">
+        <div style="display:inline-block; width:45px; height:45px;
+                    background-image:url('../../../../lusi.jpeg');
+                    background-size:cover; border-radius:50%;
+                    vertical-align:middle;"></div>
+
+        <div style="display:inline-block; margin-left:10px; width:200px; vertical-align:middle;">
+            <div style="font-weight:bold;">Zhao lusi</div>
+            <div style="font-size:13px; color:gray;">Actor</div>
+            <div style="font-size:12px; color:gray;">Popular</div>
         </div>
 
-        <!-- CONTENT -->
-        <div class="content">
+        <button style="float:right; background:#3b82f6; color:white;
+                       border:none; padding:6px 12px; border-radius:4px;">
+            Follow
+        </button>
+    </div>
 
-            <div class="top-right">
-                Pendaftaran UKMPPG Periode 42019 <br>
-                Pengumuman
-            </div>
+    <!-- profile -->
+    <div>
+        <div style="display:inline-block; width:45px; height:45px;
+                    background-image:url('../../../../eunsoo.jpeg');
+                    background-size:cover; border-radius:50%;
+                    vertical-align:middle;"></div>
 
-            <h3>Main Menu</h3>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Maecenas porttitor congue massa. Fusce posuere, magna sed
-                <span class="link-box">Pengumuman UKMPPG</span>
-                pulvinar ultricies, purus lectus malesuada libero, sit amet
-                <span class="link-box">Kisi-Kisi UKMPPG</span>
-                commodo magna eros quis urna.
-            </p>
-
-            <p>
-                Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
-                <span class="link-box">Instrumen Uji UKMPPG</span>
-            </p>
-
-            <p>
-                Pellentesque habitant morbi tristique senectus et netus et
-                malesuada fames ac turpis egestas. Proin pharetra nonummy
-                pede. Mauris et orci.
-            </p>
-
-            <p>
-                Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
-                Suspendisse dui purus, scelerisque at, vulputate vitae, pretium
-                mattis, nunc. Mauris eget neque at sem venenatis eleifend.
-                Ut nonummy.
-            </p>
-
+        <div style="display:inline-block; margin-left:10px; width:200px; vertical-align:middle;">
+            <div style="font-weight:bold;">Shin Eunsoo</div>
+            <div style="font-size:13px; color:gray;">actor</div>
+            <div style="font-size:12px; color:gray;">Popular</div>
         </div>
 
+        <button style="float:right; background:#3b82f6; color:white;
+                       border:none; padding:6px 12px; border-radius:4px;">
+            Follow
+        </button>
     </div>
 
-    <!-- FOOTER -->
-    <div class="footer">
-        © 2019 - Pendaftaran Uji Kompetensi Mahasiswa PPG
+</div>
+
+<hr>
+
+<!-- 10c -->
+<h3>10c. Draw the layout</h3>
+
+<div style="width:500px; background:white; padding:10px; border-radius:6px; margin-bottom:10px;">
+
+    <div style="display:inline-block; width:180px; height:100px;
+                background-image:url('../../../../self-taught.png');
+                background-size:cover; background-position:center;
+                vertical-align:top;">
     </div>
+
+    <div style="display:inline-block; width:280px; margin-left:10px;">
+        <div style="font-weight:bold;">
+            How to compete against CS degrees (as a self-taught dev)
+        </div>
+        <div style="color:gray; font-size:14px;">SuperSimpleDev</div>
+        <div style="color:gray; font-size:12px;">1.5K views · 4 months ago</div>
+    </div>
+
+</div>
+
+<div style="width:500px; background:white; padding:10px; border-radius:6px; margin-bottom:10px;">
+
+    <div style="display:inline-block; width:180px; height:100px;
+                background-image:url('../../../../Which.png');
+                background-size:cover; background-position:center;
+                vertical-align:top;">
+    </div>
+
+    <div style="display:inline-block; width:280px; margin-left:10px;">
+        <div style="font-weight:bold;">
+            Which programming language to learn first
+        </div>
+        <div style="color:gray; font-size:14px;">SuperSimpleDev</div>
+        <div style="color:gray; font-size:12px;">1.1K views · 1 year ago</div>
+    </div>
+
+</div>
+
+<div style="width:500px; background:white; padding:10px; border-radius:6px;">
+
+    <div style="display:inline-block; width:180px; height:100px;
+                background-image:url('../../../../FrontEnd.png');
+                background-size:cover; background-position:center;
+                vertical-align:top;">
+    </div>
+
+    <div style="display:inline-block; width:280px; margin-left:10px;">
+        <div style="font-weight:bold;">
+            Frontend web development - a complete overview
+        </div>
+        <div style="color:gray; font-size:14px;">SuperSimpleDev</div>
+        <div style="color:gray; font-size:12px;">3.4K views · 6 months ago</div>
+    </div>
+
+</div>
+
+
+<!-- 10d -->
+<h3>10d. Draw the layout</h3>
+
+<div>
+
+    <div style="display:inline-block; width:150px; background:white;
+                padding:10px; border-radius:8px; margin-right:10px;">
+
+        <div style="width:100%; height:120px;
+                    background-image:url('../../../../goyounjung.jpeg');
+                    background-size:cover; border-radius:6px;">
+        </div>
+
+<p><b>YounjungRoblok</b></p>
+        <div style="margin-bottom:8px;">
+    <div style="display:inline-block;
+                width:20px; height:20px;
+                background-image:url('../../../../jaehyun.jpeg');
+                background-size:cover;
+                background-position:center;
+                border-radius:50%;
+                vertical-align:middle;">
+    </div>
+
+    <div style="display:inline-block;
+                font-size:12px;
+                color:gray;
+                margin-left:5px;
+                vertical-align:middle;">
+        2 mutual friends
+    </div>
+</div>
+
+
+        <button style="width:100%; background:#3b82f6;
+                       color:white; border:none;
+                       padding:6px; border-radius:4px;">
+            Add Friend
+        </button>
+    </div>
+
+    <div style="display:inline-block; width:150px; background:white;
+                padding:10px; border-radius:8px; margin-right:10px;">
+
+        <div style="width:100%; height:120px;
+                    background-image:url('../../../../shinEunsooCute.jpeg');
+                    background-size:cover; border-radius:6px;">
+        </div>
+
+<p><b>SoEunMieayam</b></p>
+        <div style="margin-bottom:8px;">
+    <div style="display:inline-block;
+                width:20px; height:20px;
+                background-image:url('../../../../jaehyun.jpeg');
+                background-size:cover;
+                background-position:center;
+                border-radius:50%;
+                vertical-align:middle;">
+    </div>
+
+    <div style="display:inline-block;
+                font-size:12px;
+                color:gray;
+                margin-left:5px;
+                vertical-align:middle;">
+        2 mutual friends
+    </div>
+</div>
+
+
+        <button style="width:100%; background:#3b82f6;
+                       color:white; border:none;
+                       padding:6px; border-radius:4px;">
+            Add Friend
+        </button>
+    </div>
+
+    <div style="display:inline-block; width:150px; background:white;
+                padding:10px; border-radius:8px;">
+
+        <div style="width:100%; height:120px;
+                    background-image:url('../../../../yujin.jpeg');
+                    background-size:cover; border-radius:6px;">
+        </div>
+
+<p><b>yujinSikma</b></p>
+       <div style="margin-bottom:8px;">
+    <div style="display:inline-block;
+                width:20px; height:20px;
+                background-image:url('../../../../jaehyun.jpeg');
+                background-size:cover;
+                background-position:center;
+                border-radius:50%;
+                vertical-align:middle;">
+    </div>
+
+    <div style="display:inline-block;
+                font-size:12px;
+                color:gray;
+                margin-left:5px;
+                vertical-align:middle;">
+        2 mutual friends
+    </div>
+</div>
+
+
+        <button style="width:100%; background:#3b82f6;
+                       color:white; border:none;
+                       padding:6px; border-radius:4px;">
+            Add Friend
+        </button>
+    </div>
+
+</div>
+
+<hr>
+
+<!-- 10e -->
+<h3>10e. Draw the layout</h3>
+
+<div style="text-align:center; margin-top:30px;">
+
+    <div style="width:300px; height:100px;
+                background-image:url('../../../../google.jpeg');
+                background-size:contain;
+                background-repeat:no-repeat;
+                background-position:center;
+                margin:auto;">
+    </div>
+
+    <input type="text"
+           placeholder="Search Google or type a URL"
+           style="width:400px; padding:10px;
+                  border-radius:20px;
+                  border:1px solid #ccc;
+                  margin-top:20px;">
+
+    <br><br>
+
+    <button style="padding:8px 14px; margin-right:5px;">
+        Google Search
+    </button>
+
+    <button style="padding:8px 14px;">
+        I'm Feeling Lucky
+    </button>
 
 </div>
 

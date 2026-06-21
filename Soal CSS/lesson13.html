@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>== Lesson 13 ==</title>
+</head>
+<body style="font-family:Arial; background:black; color:white; padding:20px;">
+<h2>--- Lesson 13 ---</h2>
+
+  <p>13a. Basic Nested Flexbox</p>
+  <div style="display:flex; margin-bottom:40px;">
+    <div style="width:100px; background:lightpink; display:flex; align-items:center; justify-content:center; color:black;">
+      item1
+    </div>
+
+    <div style="width:200px; background:lightblue;"></div>
+  </div>
+
+  <p>13b. Nested layout</p>
+
+  <div style="display:flex; width:300px; margin-bottom:40px; border:1px solid white;">
+    
+    <div style="width:100px; background:lightpink;"></div>
+
+    <div style="width:200px; background:lightblue; display:flex; flex-direction:column; justify-content:space-between; padding:10px; color:black;">
+      <div style="background:white;">row1</div>
+      <div style="background:white;">row2</div>
+    </div>
+
+  </div>
+
+  <p>13c. Gmail Layout (Single Email)</p>
+
+  <div style="background:white; color:black; width:350px; padding:15px; margin-bottom:40px;">
+
+    <div style="display:flex;">
+      
+      <img src="folder-gambar/Chisa.png"
+           style="width:50px; height:50px; border-radius:50%; object-fit:cover; margin-right:15px;">
+
+      <div>
+        <div style="font-weight:bold;">Chewy Promotions</div>
+        <div style="font-weight:bold;">Biggest sales of the year!</div>
+        <div style="color:gray; font-size:14px;">
+          Hey there! We're writing to tell you about our...
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <p>13d. Single Email Layout</p>
+
+<div style="background:white; color:black; width:380px; padding:15px; margin-bottom:40px;">
+
+  <div style="display:flex;">
+
+    <img src="folder-gambar/cat2.png"
+         style="width:50px; height:50px; border-radius:50%; object-fit:cover; margin-right:15px;">
+
+    <div style="flex:1; display:flex; flex-direction:column;">
+
+      <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+        <div style="font-weight:bold;">
+          Chewy Promotions
+        </div>
+        <div style="color:gray; font-size:12px;">
+          4:58 PM
+        </div>
+      </div>
+
+      <div style="font-weight:bold; margin-bottom:4px;">
+        Biggest sales of the year!
+      </div>
+
+      <div style="color:gray; font-size:14px;">
+        Hey there! We're writing to tell you about our latest offers...
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<p>13e. Multiple emails</p>
+
+<div style="background:white; color:black; width:380px; padding:15px;">
+
+  <div style="color:gray; font-size:12px; margin-bottom:15px;">
+    ALL INBOXES
+  </div>
+
+  <!-- EMAIL 1 -->
+  <div style="display:flex; margin-bottom:20px;">
+
+    <img src="folder-gambar/Lynae.png"
+         style="width:50px; height:50px; border-radius:50%; object-fit:cover; margin-right:15px;">
+
+    <div style="flex:1; display:flex; flex-direction:column;">
+
+      <div style="display:flex; justify-content:space-between;">
+        <div style="font-weight:bold;">Chewy Promotions</div>
+        <div style="color:gray; font-size:12px;">4:58 PM</div>
+      </div>
+
+      <div style="font-weight:bold;">
+        Biggest sales of the year!
+      </div>
+
+      <div style="color:gray; font-size:14px;">
+        Hey there! We're writing to tell you about our...
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- EMAIL 2 -->
+  <div style="display:flex; margin-bottom:20px;">
+
+    <img src="folder-gambar/absolute.png"
+         style="width:50px; height:50px; border-radius:50%; object-fit:cover; margin-right:15px;">
+
+    <div style="flex:1; display:flex; flex-direction:column;">
+
+      <div style="display:flex; justify-content:space-between;">
+        <div style="font-weight:bold;">Best Buy</div>
+        <div style="color:gray; font-size:12px;">12:32 PM</div>
+      </div>
+
+      <div style="font-weight:bold;">
+        Your Best Buy Receipt
+      </div>
+
+      <div style="color:gray; font-size:14px;">
+        Thank you for shopping at Best Buy...
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- EMAIL 3 -->
+  <div style="display:flex;">
+
+    <img src="folder-gambar/Chisa.png"
+         style="width:50px; height:50px; border-radius:50%; object-fit:cover; margin-right:15px;">
+
+    <div style="flex:1; display:flex; flex-direction:column;">
+
+      <div style="display:flex; justify-content:space-between;">
+        <div style="font-weight:bold;">Netflix</div>
+        <div style="color:gray; font-size:12px;">9:00 AM</div>
+      </div>
+
+      <div style="font-weight:bold;">
+        Here's what's coming soon to Netflix
+      </div>
+
+      <div style="color:gray; font-size:14px;">
+        Brand new movies and shows...
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+  <p>13f. Twitter Layout Structure</p>
+
+  <div style="background:white; color:black; width:400px; padding:15px; margin-bottom:40px;">
+
+    <div style="display:flex;">
+      
+      <img src="folder-gambar/Cia.png"
+           style="width:50px; height:50px; border-radius:50%; object-fit:cover; margin-right:15px;">
+
+      <div style="flex:1;">
+        <div style="font-weight:bold;">
+          supersimple.dev <span style="color:gray; font-weight:normal;">@SuperSimpleDev</span>
+        </div>
+
+        <div style="margin:5px 0;">
+          What is backend web development? A complete overview. New video is up!
+        </div>
+
+        <div style="display:flex; border:1px solid lightgray; border-radius:10px; overflow:hidden;">
+          <div style="width:100px; background:lightgray;"></div>
+          <div style="padding:10px;">
+            <div style="color:gray; font-size:14px;">youtube.com</div>
+            <div>Backend web development - a complete overview (2021)</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<p>13g. Code this design using nested flexbox</p>
+
+<div style="background:white; color:black; width:420px; padding:15px;">
+
+  <div style="display:flex;">
+    <div style="margin-right:15px;">
+      <img src="folder-gambar/Chisa.png"
+           style="width:50px; height:50px; border-radius:50%; object-fit:cover;">
+    </div>
+
+    <div style="flex:1; display:flex; flex-direction:column;">
+
+      <div style="display:flex; margin-bottom:5px;">
+        <div style="font-weight:bold; margin-right:5px;">
+          supersimple.dev
+        </div>
+        <div style="color:gray;">
+          @SuperSimpleDev
+        </div>
+      </div>
+
+      <div style="margin-bottom:10px;">
+        What is backend web development? A complete overview.
+        New video is up!
+      </div>
+
+      <div style="
+        display:flex;
+        border:1px solid lightgray;
+        border-radius:12px;
+        overflow:hidden;
+      ">
+
+        <div style="width:110px; background:lightgray;"></div>
+        
+        <div style="padding:10px; display:flex; flex-direction:column; justify-content:center;">
+          <div style="color:gray; font-size:14px;">
+            youtube.com
+          </div>
+          <div>
+            Backend web development - a complete overview (2021)
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+</body>
+</html>

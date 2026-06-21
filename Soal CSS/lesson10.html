@@ -3,102 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
   <title>Lesson 10</title>
-    <style>
-        body {
-            font-family: Arial;
-        }
+  <style>
+    body {
+        font-family: Arial;
+    }
 
-        /* kiri kanan */
-        .main {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 40px;
-        }
+    /* kiri kanan */
+    .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+    }
 
-          /* profil */
-        .card {
-            background-color: #f2f2f2;
-            width: 400px;
-            padding: 15px;
-            border-radius: 8px;
-        }
+    /* profil */
+    .card {
+        background-color: #f2f2f2;
+        width: 400px;
+        padding: 15px;
+        border-radius: 8px;
+    }
 
-        .profile {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 15px;
-        }
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
 
-        .left-section {
-            display: flex;
-            align-items: center;
-        }
+    .left-section {
+        display: flex;
+        align-items: center;
+    }
 
-        .profile img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
+    .profile img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
 
-        .nama {
-            font-weight: bold;
-        }
+    .nama {
+        font-weight: bold;
+    }
 
-        .info {
-            color: gray;
-            font-size: 14px;
-        }
+    .info {
+        color: gray;
+        font-size: 14px;
+    }
 
-        .follow-btn {
-            background-color: #1d9bf0;
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 6px;
-            cursor: pointer;
-        }
+    .follow-btn {
+        background-color: #1d9bf0;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
 
-        /* VIDEO  */
-        .video-yt {
-            width: 500px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-        }
+    /* VIDEO  */
+    .video-yt {
+        width: 500px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+    }
 
-        .video {
-            display: flex;
-            margin-bottom: 15px;
-        }
+    .video {
+        display: flex;
+        margin-bottom: 15px;
+    }
 
-        .thumbnail {
-            width: 160px;
-            height: 90px;
-            object-fit: cover;
-            margin-right: 10px;
-            border-radius: 4px;
-            background-color: lightgray;
-        }
+    .thumbnail {
+        width: 160px;
+        height: 90px;
+        object-fit: cover;
+        margin-right: 10px;
+        border-radius: 4px;
+        background-color: lightgray;
+    }
 
-        .title {
-            font-weight: bold;
-            font-size: 14px;
-            margin-bottom: 6px;
-        }
+    .title {
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
 
-        .channel,
-        .stats {
-            color: gray;
-            font-size: 12px;
-        }
-    </style>
+    .channel,
+    .stats {
+        color: gray;
+        font-size: 12px;
+    }
+
+    /* FRIEND SUGGESTION CARDS */
+    .friend-card {
+        display: inline-block;
+        width: 150px;
+        background: white;
+        padding: 10px;
+        border-radius: 8px;
+        margin-right: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    }
+
+    .friend-cover {
+        width: 100%;
+        height: 120px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 6px;
+    }
+
+    .mutual-row {
+        margin-bottom: 8px;
+    }
+
+    .mutual-avatar {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+
+    .mutual-text {
+        display: inline-block;
+        font-size: 12px;
+        color: gray;
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+
+    .add-friend-btn {
+        width: 100%;
+        background: #3b82f6;
+        color: white;
+        border: none;
+        padding: 6px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
@@ -154,7 +202,7 @@
             <div>
                 <div class="title">How to compete against CS degrees</div>
                 <div class="channel">SuperSimpleDev</div>
-                <div class="stats">1.5K views · 4 months ago</div>
+                <div class="stats">1.5K views &middot; 4 months ago</div>
             </div>
         </div>
 
@@ -163,7 +211,7 @@
             <div>
                 <div class="title">Which programming language to learn first</div>
                 <div class="channel">SuperSimpleDev</div>
-                <div class="stats">5.7K views · 11 months ago</div>
+                <div class="stats">5.7K views &middot; 11 months ago</div>
             </div>
         </div>
 
@@ -172,7 +220,86 @@
             <div>
                 <div class="title">Frontend web development overview</div>
                 <div class="channel">SuperSimpleDev</div>
-                <div class="stats">1K views · 4 months ago</div>
+                <div class="stats">1K views &middot; 4 months ago</div>
             </div>
+        </div>
+
+    </div>
+
+</div>
+
+<br><hr>
+
+<!-- FRIEND SUGGESTIONS SECTION -->
+<div>
+
+    <div class="friend-card">
+        <div class="friend-cover" style="background-image:url('folder-gambar/garong2.png');"></div>
+        <p><b>Yukino</b></p>
+        <div class="mutual-row">
+            <div class="mutual-avatar" style="background-image:url('folder-gambar/Dog.png');"></div>
+            <div class="mutual-text">2 mutual friends</div>
+        </div>
+        <button class="add-friend-btn">Add Friend</button>
+    </div>
+
+    <div class="friend-card">
+        <div class="friend-cover" style="background-image:url('folder-gambar/cat2.png');"></div>
+        <p><b>8Man</b></p>
+        <div class="mutual-row">
+            <div class="mutual-avatar" style="background-image:url('folder-gambar/Dog.png');"></div>
+            <div class="mutual-text">2 mutual friends</div>
+        </div>
+        <button class="add-friend-btn">Add Friend</button>
+    </div>
+
+    <div class="friend-card" style="margin-right:0;">
+        <div class="friend-cover" style="background-image:url('folder-gambar/dog2.png');"></div>
+        <p><b>Yui</b></p>
+        <div class="mutual-row">
+            <div class="mutual-avatar" style="background-image:url('folder-gambar/Dog.png');"></div>
+            <div class="mutual-text">2 mutual friends</div>
+          
+        </div>
+        <button class="add-friend-btn">Add Friend</button>
+    </div>
+
+</div>
+
+<hr>
+
+<!-- 10e -->
+
+
+<div style="text-align:center; margin-top:30px;">
+
+    <div style="width:300px; height:100px;
+                background-image:url('../../../../google.jpeg');
+                background-size:contain;
+                background-repeat:no-repeat;
+                background-position:center;
+                margin:auto;">
+    </div>
+
+    <input type="text"
+           placeholder="Search Google or type a URL"
+           style="width:400px; padding:10px;
+                  border-radius:20px;
+                  border:1px solid #ccc;
+                  margin-top:20px;">
+
+    <br><br>
+
+    <button style="padding:8px 14px; margin-right:5px;">
+        Google Search
+    </button>
+
+    <button style="padding:8px 14px;">
+        I'm Feeling Lucky
+    </button>
+
+</div>
+
+
 </body>
 </html>
